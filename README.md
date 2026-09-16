@@ -4,9 +4,9 @@
 
 Project page: https://anonymous0001375.github.io/PneuShape/
 
-The control and perception code, together with the sensor and gripper fabrication files
-(molds, TPU liners, and the capacitive sensor layers), will be released in this repository
-upon acceptance.
+The sensor and gripper fabrication files (molds, TPU liners, and the capacitive sensor
+layers), together with the PCB design files, will be released in this repository upon
+acceptance.
 
 ```bibtex
 @inproceedings{pneushape2026,
