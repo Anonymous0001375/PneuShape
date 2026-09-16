@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PneuShape — A Soft Pneumatic Gripper with Embedded Distributed Capacitive Shape Sensing</title>
+<meta name="description" content="PneuShape is a soft pneumatic gripper with an embedded nine-channel differential capacitive sensor that reconstructs finger shape in real time for vision-free object shape estimation and closed-loop grasping. Code and fabrication files will be released upon acceptance.">
+<style>
+  :root{
+    --ink:#111418;
+    --muted:#5b6570;
+    --line:#e3e6ea;
+    --accent:#245b4a;
+    --soft:#f6f8f7;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0;
+    background:#fff;
+    color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif;
+    font-size:17px;
+    line-height:1.7;
+    -webkit-font-smoothing:antialiased;
+  }
+  a{color:var(--accent);text-decoration:none;border-bottom:1px solid rgba(36,91,74,.35);}
+  a:hover{border-bottom-color:var(--accent);}
+  .wrap{max-width:720px;margin:0 auto;padding:0 22px;}
+  header{padding:72px 0 8px;text-align:center;}
+  h1{
+    font-size:clamp(23px,3vw,32px);
+    line-height:1.3;
+    margin:0 0 18px;
+    font-weight:700;
+    letter-spacing:-0.2px;
+  }
+  .authors{font-size:17px;margin:0 0 6px;}
+  .affil{font-size:15px;color:var(--muted);margin:0;}
+  main{padding:34px 0 10px;}
+  h2{font-size:19px;margin:34px 0 12px;letter-spacing:-0.1px;}
+  h2:first-of-type{margin-top:6px;}
+  p{margin:0 0 15px;}
+  .note{
+    background:var(--soft);
+    border:1px solid var(--line);
+    border-left:3px solid var(--accent);
+    border-radius:6px;
+    padding:16px 18px;
+    margin:0 0 6px;
+  }
+  .note p:last-child{margin-bottom:0;}
+  pre{
+    background:#0f1317;color:#e8edf2;border-radius:8px;padding:16px 18px;
+    overflow-x:auto;font-size:13.5px;line-height:1.55;
+    font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,"Liberation Mono",monospace;
+  }
+  code{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,"Liberation Mono",monospace;}
+  footer{
+    border-top:1px solid var(--line);
+    margin-top:44px;
+    padding:22px 0 46px;
+    color:var(--muted);
+    font-size:14px;
+    text-align:center;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <h1>PneuShape: A Soft Pneumatic Gripper with Embedded Distributed Capacitive Shape Sensing for Closed-Loop Control</h1>
+    <p class="authors">Anonymous Authors</p>
+    <p class="affil">Manuscript under review &middot; anonymized for double-blind review</p>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <h2>About this project</h2>
+  <p>
+    PneuShape is a soft pneumatic gripper with integrated proprioceptive shape sensing. Each finger
+    carries a nine-channel differential capacitive sensor beneath a 3D-printed TPU core, and the whole
+    assembly is molded in Ecoflex 00-30 silicone. A mold-supervised neural network maps the nine
+    differential-capacitance measurements to a 27-point curve that describes the finger's shape in real
+    time, so the gripper can perceive its own deformation without any external vision.
+  </p>
+  <p>
+    Using these reconstructed finger curves, we estimate contact, lateral and axial grasp offsets, and the
+    cross-sectional shape of the grasped object. In our experiments the gripper reconstructs the
+    cross-sections of six column-shaped objects with a mean RMSE of 5.8&nbsp;mm, and it grasps objects
+    placed at unknown off-center positions with a success rate of 95%.
+  </p>
+
+  <h2>Code and fabrication files</h2>
+  <div class="note">
+    <p>
+      The control and perception code, together with the sensor and gripper fabrication files (molds, TPU
+      liners, and capacitive sensor layers), will be released in this repository upon acceptance.
+    </p>
+  </div>
+
+  <h2>BibTeX</h2>
+  <p>Please cite our paper if you find this work useful. The entry will be updated with the final venue information.</p>
+  <pre><code>@inproceedings{pneushape2026,
+  title     = {PneuShape: A Soft Pneumatic Gripper with Embedded
+               Distributed Capacitive Shape Sensing for Closed-Loop Control},
+  author    = {Anonymous Authors},
+  booktitle = {Under review},
+  year      = {2026}
+}</code></pre>
+
+</main>
+
+<footer>
+  <div class="wrap">PneuShape &middot; anonymous project page for double-blind review</div>
+</footer>
+
+</body>
+</html>
