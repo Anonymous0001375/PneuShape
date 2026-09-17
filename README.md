@@ -5,5 +5,5 @@
 Project page: https://anonymous0001375.github.io/PneuShape/
 
 The sensor and gripper fabrication files (molds, TPU liners, and the capacitive sensor
-layers), together with the PCB design files and embedded firmware, will be released in this repository upon
-acceptance.
+layers), together with the PCB design files and embedded firmware, will be released in
+this repository upon acceptance.
